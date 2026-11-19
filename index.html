@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing - Examen Práctico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        /* Menú de navegación */
+        nav {
+            background-color: #1e293b;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover, nav a.activo {
+            background-color: #3b82f6;
+        }
+        /* Contenedor principal */
+        .contenedor {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 30px;
+        }
+        .tarjeta {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .tarjeta h2 {
+            color: #2563eb;
+            margin-top: 0;
+        }
+        .tarjeta p {
+            line-height: 1.6;
+            font-size: 16px;
+            text-align: justify;
+        }
+        .tarjeta img {
+            max-width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-top: 15px;
+            border: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de conexión entre páginas -->
+    <nav>
+        <a href="index.html" class="activo">Cloud Computing</a>
+        <a href="remoto.html">Conexión Remota</a>
+    </nav>
+
+    <div class="contenedor">
+        <h1>Tecnologías de Cloud Computing</h1>
+
+        <!-- 1. Cloud Computing -->
+        <div class="tarjeta">
+            <h2>Cloud Computing (Computación en la Nube)</h2>
+            <p>Es la entrega de servicios de computación —incluidos servidores, almacenamiento, bases de datos, redes, software y análisis— a través de Internet ("la nube") para ofrecer innovación rápida, recursos flexibles y economías de escala.</p>
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80" alt="Concepto de Cloud Computing">
+        </div>
+
+        <!-- 2. SaaS -->
+        <div class="tarjeta">
+            <h2>SaaS (Software as a Service)</h2>
+            <p>Modelo de distribución de software donde el soporte lógico y los datos que maneja se alojan en servidores de una compañía de tecnologías de información y comunicación, a los que se accede vía Internet desde un cliente (ej. Google Workspace, Office 365).</p>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Ejemplo de SaaS">
+        </div>
+
+        <!-- 3. PaaS -->
+        <div class="tarjeta">
+            <h2>PaaS (Platform as a Service)</h2>
+            <p>Entorno de desarrollo e implementación completo en la nube, con recursos que permiten entregar desde aplicaciones sencillas basadas en la nube hasta aplicaciones empresariales sofisticadas sin gestionar la infraestructura subyacente (ej. Heroku, Google App Engine).</p>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Ejemplo de PaaS">
+        </div>
+
+        <!-- 4. IaaS -->
+        <div class="tarjeta">
+            <h2>IaaS (Infrastructure as a Service)</h2>
+            <p>Infraestructura informática instantánea, aprovisionada y administrada a través de Internet. Permite alquilar servidores virtuales, almacenamiento y redes bajo demanda (ej. Amazon EC2, Microsoft Azure).</p>
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Servidores IaaS">
+        </div>
+
+        <!-- 5. Virtualización -->
+        <div class="tarjeta">
+            <h2>Virtualización</h2>
+            <p>Tecnología que permite crear servicios de TI útiles mediante recursos que están tradicionalmente vinculados al hardware. Permite utilizar toda la capacidad de una máquina física distribuyendo sus capacidades entre muchos usuarios o entornos mediante máquinas virtuales (VMs).</p>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Virtualización de hardware">
+        </div>
+
+        <!-- 6. Docker -->
+        <div class="tarjeta">
+            <h2>Docker</h2>
+            <p>Plataforma de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software ligeros y portátiles, garantizando que el software funcione de manera uniforme en cualquier entorno.</p>
+            <img src="https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=600&q=80" alt="Contenedores Docker">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexión Remota - Examen Práctico</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        /* Menú de navegación */
+        nav {
+            background-color: #1e293b;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 20px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover, nav a.activo {
+            background-color: #3b82f6;
+        }
+        /* Contenedor principal */
+        .contenedor {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 30px;
+        }
+        .tarjeta {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .tarjeta h2 {
+            color: #dc2626;
+            margin-top: 0;
+        }
+        .tarjeta.tv h2 {
+            color: #0284c7;
+        }
+        .tarjeta p {
+            line-height: 1.6;
+            font-size: 16px;
+            text-align: justify;
+        }
+        .tarjeta img {
+            max-width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-top: 15px;
+            border: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de conexión entre páginas -->
+    <nav>
+        <a href="index.html">Cloud Computing</a>
+        <a href="remoto.html" class="activo">Conexión Remota</a>
+    </nav>
+
+    <div class="contenedor">
+        <h1>Herramientas de Conexión Remota</h1>
+
+        <!-- 1. AnyDesk -->
+        <div class="tarjeta">
+            <h2>AnyDesk</h2>
+            <p>Es una aplicación de software de escritorio remoto multiplataforma que proporciona acceso remoto bidireccional independiente de la plataforma a computadoras personales y otros dispositivos. Destaca por su baja latencia, ligereza y uso del códec de video DeskRT.</p>
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" alt="Soporte remoto con AnyDesk">
+        </div>
+
+        <!-- 2. TeamViewer -->
+        <div class="tarjeta tv">
+            <h2>TeamViewer</h2>
+            <p>Es un software propietario de acceso remoto, control remoto, mantenimiento de computadoras y colaboración en línea. Permite compartir pantallas, transferir archivos de forma segura y brindar soporte técnico a distancia a través de firewalls y proxies NAT sin configuraciones complejas.</p>
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80" alt="Colaboración y acceso remoto con TeamViewer">
+        </div>
+    </div>
+
+</body>
+</html>
